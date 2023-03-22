@@ -274,13 +274,13 @@ if (selected == 'Autism Prediction'):
         A9_Score = st.text_input('Does your child use simple gestures?(Yes-1/No-0)')
     
     with col2:
-	A10_Score = st.text_input('Does your child stare at nothing with no apparent purpose?(Yes-1/No-0)')
+        A10_Score = st.text_input('Does your child stare at nothing with no apparent purpose?(Yes-1/No-0)')
     
     with col1:
-	age = st.text_input('Age')
+        age = st.text_input('Age')
     
     with col2:
-	jundice=st.text_input('Whether the child was born with jaundice?(Yes-1/No-0)')
+        jundice=st.text_input('Whether the child was born with jaundice?(Yes-1/No-0)')
     
     
     autism_diagnosis = ''
