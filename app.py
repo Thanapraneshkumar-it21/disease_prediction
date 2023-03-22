@@ -24,7 +24,7 @@ with st.sidebar:
                            'Heart Disease Prediction',
                            'Parkinsons Prediction',
 			   'Autism Prediction',
-                           'About Us'],
+                          ],
                           icons=['activity','heart','person','caret-right-square-fill','house'],
                           default_index=0)
     
@@ -296,8 +296,5 @@ if (selected == 'Autism Prediction'):
     st.success( autism_diagnosis)
            
 
-if (selected == 'About us'):
-    st.title('About us')
-    st.text('Developed by Thanapranesh Kumar K.')
    
 
