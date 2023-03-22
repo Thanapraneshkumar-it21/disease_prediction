@@ -242,45 +242,46 @@ if (selected == "Parkinsons Prediction"):
     
 if (selected == 'Autism Prediction'):
     
-    st.title('Autism Disease Prediction Using ML')
+    st.title('Autism Disease Prediction Using ML  Yes - 1, No - 0')
+    st.text('Enter the details as if Yes means 1 and No meaans 0')
     
     col1, col2  = st.columns(2)
 
     with col1:
-        A1_Score = st.text_input('Whether the child look at you when you call his/her name?(Yes-1/No-0)')
+        A1_Score = st.text_input('Whether the child look at you when you call his/her name?')
     
     with col2:
-        A2_Score = st.text_input('How easy it is for you to get eye contact with the child?(Yes-1/No-0)')
+        A2_Score = st.text_input('How easy it is for you to get eye contact with the child?')
 	
     with col1:
-        A3_Score = st.text_input('Does your child point to indicate that he/she wants something?(Yes-1/No-0)')
+        A3_Score = st.text_input('Does your child point to indicate that he/she wants something?')
 	
     with col2:
-        A4_Score = st.text_input('Does your child point to share interest with you?(Yes-1/No-0)')
+        A4_Score = st.text_input('Does your child point to share interest with you?')
 	
     with col1:
-        A5_Score = st.text_input('Does your child pretend?(Yes-1/No-0)')
+        A5_Score = st.text_input('Does your child pretend?')
 	
     with col2:	
-        A6_Score = st.text_input('Does your child follow when you are looking?(Yes-1/No-0)')
+        A6_Score = st.text_input('Does your child follow when you are looking?')
 	
     with col1:
-        A7_Score = st.text_input('If you or someone else in the family is visibly upset,does your child show signs of warning to comfort them?(Yes-1/No-0)')
+        A7_Score = st.text_input('If you or someone else in the family is visibly upset,does your child show signs of warning to comfort them?')
 	
     with col2:
-        A8_Score = st.text_input('Does your child talk back when you talk?(Yes-1/No-0)')
+        A8_Score = st.text_input('Does your child talk back when you talk?')
 	
     with col1:
-        A9_Score = st.text_input('Does your child use simple gestures?(Yes-1/No-0)')
+        A9_Score = st.text_input('Does your child use simple gestures?')
     
     with col2:
-        A10_Score = st.text_input('Does your child stare at nothing with no apparent purpose?(Yes-1/No-0)')
+        A10_Score = st.text_input('Does your child stare at nothing with no apparent purpose?')
     
     with col1:
         age = st.text_input('Age')
     
     with col2:
-        jundice=st.text_input('Whether the child was born with jaundice?(Yes-1/No-0)')
+        jundice=st.text_input('Whether the child was born with jaundice?')
     
     
     autism_diagnosis = ''
