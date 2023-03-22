@@ -244,19 +244,43 @@ if (selected == 'Autism Prediction'):
     
     st.title('Autism Disease Prediction Using ML')
     
+    col1, col2  = st.columns(2)
+
+    with col1:
+        A1_Score = st.text_input('Whether the child look at you when you call his/her name?(Yes-1/No-0)')
     
-    A1_Score = st.text_input('Whether the child look at you when you call his/her name?(Yes-1/No-0)')
-    A2_Score = st.text_input('How easy it is for you to get eye contact with the child?(Yes-1/No-0)')
-    A3_Score = st.text_input('Does your child point to indicate that he/she wants something?(Yes-1/No-0)')
-    A4_Score = st.text_input('Does your child point to share interest with you?(Yes-1/No-0)')
-    A5_Score = st.text_input('Does your child pretend?(Yes-1/No-0)')
-    A6_Score = st.text_input('Does your child follow when you are looking?(Yes-1/No-0)')
-    A7_Score = st.text_input('If you or someone else in the family is visibly upset,does your child show signs of warning to comfort them?(Yes-1/No-0)')
-    A8_Score = st.text_input('Does your child talk back when you talk?(Yes-1/No-0)')
-    A9_Score = st.text_input('Does your child use simple gestures?(Yes-1/No-0)')
-    A10_Score = st.text_input('Does your child stare at nothing with no apparent purpose?(Yes-1/No-0)')
-    age = st.text_input('Age')
-    jundice=st.text_input('Whether the child was born with jaundice?(Yes-1/No-0)')
+    with col2:
+        A2_Score = st.text_input('How easy it is for you to get eye contact with the child?(Yes-1/No-0)')
+	
+    with col1:
+        A3_Score = st.text_input('Does your child point to indicate that he/she wants something?(Yes-1/No-0)')
+	
+    with col2:
+        A4_Score = st.text_input('Does your child point to share interest with you?(Yes-1/No-0)')
+	
+    with col1:
+        A5_Score = st.text_input('Does your child pretend?(Yes-1/No-0)')
+	
+    with col2:	
+        A6_Score = st.text_input('Does your child follow when you are looking?(Yes-1/No-0)')
+	
+    with col1:
+        A7_Score = st.text_input('If you or someone else in the family is visibly upset,does your child show signs of warning to comfort them?(Yes-1/No-0)')
+	
+    with col2:
+        A8_Score = st.text_input('Does your child talk back when you talk?(Yes-1/No-0)')
+	
+    with col1:
+        A9_Score = st.text_input('Does your child use simple gestures?(Yes-1/No-0)')
+    
+    with col2:
+	A10_Score = st.text_input('Does your child stare at nothing with no apparent purpose?(Yes-1/No-0)')
+    
+    with col1:
+	age = st.text_input('Age')
+    
+    with col2:
+	jundice=st.text_input('Whether the child was born with jaundice?(Yes-1/No-0)')
     
     
     autism_diagnosis = ''
@@ -273,9 +297,6 @@ if (selected == 'Autism Prediction'):
 
 if (selected == 'About us'):
     st.title('About us')
-    st.text('This application is designed to predict whether a person has the listed multiple disease or not.')
-    st.text('The proposed model is based on the Support Vector Machine.The input data gets tested')
-    st.text(' and predicts the result.')
     st.text('Developed by Thanapranesh Kumar K.')
    
 
