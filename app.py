@@ -23,7 +23,7 @@ with st.sidebar:
                           ['Diabetes Prediction',
                            'Heart Disease Prediction',
                            'Parkinsons Prediction',
-				   'Autism Prediction',
+			   'Autism Prediction',
                            'About Us'],
                           icons=['activity','heart','person','caret-right-square-fill','house'],
                           default_index=0)
