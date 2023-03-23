@@ -243,7 +243,7 @@ if (selected == "Parkinsons Prediction"):
 if (selected == 'Autism Prediction'):
     
     st.title('Autism Disease Prediction Using ML  Yes - 1, No - 0')
-    st.text('Enter the details as if Yes means 1 and No meaans 0')
+    st.text('Enter the details as if Yes means 1 and No means 0')
     
     col1, col2  = st.columns(2)
 
